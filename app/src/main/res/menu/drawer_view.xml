@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:orderInCategory="1"
+        android:title="@string/menu_home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_history"
+        android:orderInCategory="2"
+        android:title="@string/menu_history"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/chnageLang"
+        android:title="@string/change_language"
+        app:showAsAction="never"
+        android:orderInCategory="3" />
+
+    <item android:id="@+id/logOut"
+        android:title="@string/logout"
+        app:showAsAction="never"
+        android:orderInCategory="4"/>
+</menu>

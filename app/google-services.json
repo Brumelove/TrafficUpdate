@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "839196903025",
+    "firebase_url": "https://bm-traffic.firebaseio.com",
+    "project_id": "bm-traffic",
+    "storage_bucket": "bm-traffic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839196903025:android:d1ef85010ae7da5d",
+        "android_client_info": {
+          "package_name": "com.mauritues.brume.bmtraffic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839196903025-qneh3hpbkssv4qbtdkq1dlp4ngdp5tmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkShL00b8nXXEgItaRQMApcreRmcH-RRs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

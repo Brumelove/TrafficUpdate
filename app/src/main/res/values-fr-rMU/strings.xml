@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BmTraffic</string>
+    <string name="next">Suivant</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="confirm">Confirmer</string>
+    <string name="share_button">partager</string>
+    <string name="time_view">Temps</string>
+    <string name="weather_view">Météo</string>
+    <string name="map_type">"Temps de la carte"</string>
+    <string name="record_traffic">Enregistrer le traffic</string>
+    <string name="search_button">Chercher</string>
+    <string name="today">AUJOURD\'HUI</string>
+    <string name="menu_button">Menu</string>
+    <string name="logout">Connectez-Out</string>
+    <string name="sms_code">"Code de téléphone"</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="menu_home">Accueil</string>
+    <string name="menu_history">L\'histoire</string>
+    <string name="start_address">Adresse de départ</string>
+    <string name="destination_address">Adresse de destination</string>
+    <string name="date_view">"Rendez-vous amoureux"</string>
+    <string name="tnc">En cliquant sur confirmer, vous acceptez les conditions d’utilisation ėquitable</string>
+    <string name="prompt_sms">Veuillez saisir le code SMS envoyé sur votre téléphone</string>
+    <string name="info_text">Nous allons utiliser cela pour vérifier votre compte. Vous recevrez un sms.</string>
+    <string name="welcome_text">Bienvenue sur TrafficUpdate. S\'il vous plait, entrez votre numéro de téléphone!</string>
+    <string name="history">L\'histoire</string>
+    <string name="weather">" Ensoleillé"</string>
+    <string name="change_language">Changer de Langue</string>
+    <string name="select_language">Choisir la Langue</string>
+    <string name="change_app_lang">Changer la Langue de L\'application</string>
+    <string-array name="languages">
+        <item>Anglais</item>
+        <item>Français</item>
+    </string-array>
+    <string name="english">Anglais</string>
+    <string name="french">Français</string>
+    <string name="close">Proche</string>
+    <string name="to">Vers</string>
+    <string name="share_text">Découvrez cette application de surveillance du trafic impressionnant</string>
+    <string name="msg_subscribed">notification souscrite</string>
+    <string name="msg_subscribe_failed">L\'abonnement de notification a échoué</string>
+</resources>

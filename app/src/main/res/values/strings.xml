@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name" translatable="false">TrafficUpdate</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_history">History</string>
+    <string name="start_address">Start Address</string>
+    <string name="destination_address">Destination Address</string>
+    <string name="marker" translatable="false">📍</string>
+    <string name="weather">Sunny</string>
+    <string name="date_view">Date View</string>
+    <string name="weather_view">Weather</string>
+    <string name="time_view">Time</string>
+    <string name="share_button">Share</string>
+    <string name="map_type">Map Type</string>
+    <string name="record_traffic">Record Traffic</string>
+    <string name="search_button">Search</string>
+    <string name="today">TODAY</string>
+    <string name="menu_button">Menu</string>
+    <string name="logout">Logout</string>
+    <string name="tnc">By clicking confirm, you agree to the terms of fair use</string>
+    <string name="prompt_sms">Please enter the sms code sent to your phone</string>
+    <string name="sms_code">SMS Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="info_text">We\'ll use this to verify your account. You would receive an sms .</string>
+    <string name="welcome_text">Welcome to TrafficUpdate. Please enter your phone number!.</string>
+    <string name="phone_number">Phone number</string>
+    <string name="prefix" translatable="false">230</string>
+    <string name="next">Next</string>
+    <string name="history">History</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>French</item>
+    </string-array>
+    <string name="app_name_long" translatable="false">TrafficUpdate APP</string>
+    <string name="change_language">Change Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="change_app_lang">Change App Language</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="close">Close</string>
+    <string name="to">To</string>
+    <string name="share_text">Check out this awesome traffic monitor app</string>
+    <string name="msg_subscribed">notification subscribed</string>
+    <string name="msg_subscribe_failed">notification subscription failed</string>
+</resources>

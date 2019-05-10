@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">839196903025-qneh3hpbkssv4qbtdkq1dlp4ngdp5tmn.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bm-traffic.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">839196903025</string>
+    <string name="google_api_key" translatable="false">AIzaSyBkShL00b8nXXEgItaRQMApcreRmcH-RRs</string>
+    <string name="google_app_id" translatable="false">1:839196903025:android:d1ef85010ae7da5d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBkShL00b8nXXEgItaRQMApcreRmcH-RRs</string>
+    <string name="google_storage_bucket" translatable="false">bm-traffic.appspot.com</string>
+    <string name="project_id" translatable="false">bm-traffic</string>
+</resources>

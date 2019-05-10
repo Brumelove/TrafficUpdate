@@ -1,0 +1,4 @@
+#Thu Apr 25 15:10:29 WAT 2019
+base.0=/Users/covenant/CovenantAndroidProjects/finalyearproject/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

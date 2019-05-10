@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#480768</color>
+    <color name="colorPrimaryDark">#c5ebff</color>
+    <color name="colorAccent">#c5ebff</color>
+    <color name="MapBackgroundColour">#f5f5f5ff</color>
+    <color name="bm_background">#263238</color>
+
+</resources>

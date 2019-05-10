@@ -1,0 +1,406 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/drawer_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true">-->
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/content_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mauritues.brume.bmtraffic.MainMapActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15"
+        app:srcCompat="@drawable/mic_2"
+        tools:ignore="ContentDescription,NotSibling"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <com.mauritues.brume.bmtraffic.MapAutoCompleteTextView
+        android:id="@+id/destinationLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:hint="@string/destination_address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmMapView"
+        app:layout_constraintEnd_toStartOf="@+id/menuButton"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/sourceLocation" />
+
+    <com.mauritues.brume.bmtraffic.MapAutoCompleteTextView
+        android:id="@+id/sourceLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:hint="@string/start_address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/menuButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <ImageView
+        android:id="@+id/menuButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/destinationLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sourceLocation"
+        android:contentDescription="@string/menu_button"
+        android:src="@drawable/ic_more_vert"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/marker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sourceLocation" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/bmMapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationLocation" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bm_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmMapView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:background="@color/bm_background">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/weather"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/lato_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@string/time_view"
+            app:layout_constraintBaseline_toBaselineOf="@+id/timeView"
+            app:layout_constraintEnd_toStartOf="@+id/timeView"
+            app:layout_constraintHorizontal_bias="0.731"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:srcCompat="@drawable/clock_2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@string/weather_view"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:srcCompat="@drawable/cloud_2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@string/date_view"
+            app:layout_constraintBaseline_toBaselineOf="@+id/dateView"
+            app:layout_constraintEnd_toStartOf="@+id/dateView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/calendar_2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/today"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/lato_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:srcCompat="@drawable/today_2"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            tools:text="01 March 2019"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/lato_regular"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            tools:text="15:07"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/lato_regular"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+        <ImageView
+            android:id="@+id/shareLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="4dp"
+            android:contentDescription="@string/share_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:srcCompat="@drawable/share_2" />
+
+        <ImageView
+            android:id="@+id/mapType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/map_type"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:srcCompat="@drawable/mic_2" />
+
+        <ImageView
+            android:id="@+id/recordTraffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/record_traffic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:srcCompat="@drawable/logout_2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/recordButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/search_button"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/record_2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.61" />
+
+</android.support.constraint.ConstraintLayout>
+    <!--</FrameLayout>-->
+
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:menu="@menu/drawer_view"-->
+        <!--app:headerLayout="@layout/nav_header">-->
+    <!--</android.support.design.widget.NavigationView>-->
+
+<!--</android.support.v4.widget.DrawerLayout>-->

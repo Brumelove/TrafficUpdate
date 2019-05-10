@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>SessionVariables.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #597cc2;}
+.s1 { color: #aeb5bd;}
+.s2 { color: #5c7ab8;}
+.s3 { color: #807d6e; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+SessionVariables.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.mauritues.brume.bmtraffic</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">com.google.android.gms.maps.model.LatLng</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">com.google.firebase.auth.FirebaseUser</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">com.google.firebase.auth.PhoneAuthCredential</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">com.google.firebase.auth.PhoneAuthProvider</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">com.mauritues.brume.bmtraffic.model.LocationRecording</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java.util.ArrayList</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java.util.HashMap</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java.util.List</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">SessionVariables {</span>
+
+    <span class="s0">public static </span><span class="s1">HashMap&lt;String</span><span class="s2">, </span><span class="s1">LatLng&gt; Locations = </span><span class="s0">new </span><span class="s1">HashMap&lt;&gt;()</span><span class="s2">;</span>
+    <span class="s0">public static </span><span class="s1">String MAP_VIEW_KEY</span><span class="s2">;</span>
+
+    <span class="s0">public static </span><span class="s1">List&lt;LocationRecording&gt;  storedRecordings = </span><span class="s0">new </span><span class="s1">ArrayList&lt;&gt;()</span><span class="s2">;</span>
+
+    <span class="s0">public static </span><span class="s1">String  PhoneVerificationId = </span><span class="s3">&quot;&quot;</span><span class="s2">;</span>
+    <span class="s0">public static </span><span class="s1">PhoneAuthProvider.ForceResendingToken PhoneResendToken</span><span class="s2">;</span>
+
+    <span class="s0">public static </span><span class="s1">PhoneAuthCredential PhoneCredential</span><span class="s2">;</span>
+
+    <span class="s0">public static </span><span class="s1">FirebaseUser LoggedUser</span><span class="s2">;</span>
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
